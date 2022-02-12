@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Suite">
+  <test name="Demo Test">
+      <parameter name="emailid" value="user456@mymail.com"/>
+      <parameter name="password" value="pass@123"/>
+      <classes>
+      <class name="restassureddemo.APITestsDemo"/>
+      </classes>
+  </test> <!-- Test --> 
+</suite> <!-- Suite -->
