@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restassureddemo.APITestsDemo">
+      <class name="restassureddemo.TestClass">
         <methods>
-          <include name="firstTestCase"/>
+          <include name="getReq"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- restassureddemo.APITestsDemo -->
+      </class> <!-- restassureddemo.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

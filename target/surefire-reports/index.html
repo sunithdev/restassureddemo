@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Demo_Suite" class="navigator-link ">
-                    <span>C:\Users\USER\eclipse-workspace\restassureddemo\testng.xml</span>
+                    <span>C:\Users\USER\git\restassureddemo\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Demo_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Demo_Suite" title="restassureddemo.APITestsDemo" class="method navigator-link" hash-for-method="firstTestCase">firstTestCase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Demo_Suite" title="restassureddemo.TestClass" class="method navigator-link" hash-for-method="getReq">getReq</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suite" title="restassureddemo.TestClass" class="method navigator-link" hash-for-method="postReq">postReq</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Demo_Suite -->
@@ -120,14 +125,25 @@
           <div class="suite-Demo_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">restassureddemo.APITestsDemo</span>
+              <span class="class-name">restassureddemo.TestClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="firstTestCase">
-                  </a> <!-- firstTestCase -->
-                  <span class="method-name">firstTestCase</span>
+                  <a name="getReq">
+                  </a> <!-- getReq -->
+                  <span class="method-name">getReq</span>
+                  <em>
+(List all the users with GET)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postReq">
+                  </a> <!-- postReq -->
+                  <span class="method-name">postReq</span>
+                  <em>
+(Create a user with POST)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +151,7 @@
         </div> <!-- panel Demo_Suite -->
         <div panel-name="test-xml-Demo_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\USER\eclipse-workspace\restassureddemo\testng.xml</span>
+            <span class="header-content">C:\Users\USER\git\restassureddemo\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +162,7 @@
     &lt;parameter name=&quot;password&quot; value=&quot;pass@123&quot;/&gt;
     &lt;parameter name=&quot;emailid&quot; value=&quot;user456@mymail.com&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;restassureddemo.APITestsDemo&quot;/&gt;
+      &lt;class name=&quot;restassureddemo.TestClass&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Demo Test --&gt;
 &lt;/suite&gt; &lt;!-- Demo Suite --&gt;
@@ -186,16 +202,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'firstTestCase')
-data.setCell(0, 2, 'restassureddemo.APITestsDemo')
-data.setCell(0, 3, 4286);
+data.setCell(0, 1, 'getReq')
+data.setCell(0, 2, 'restassureddemo.TestClass')
+data.setCell(0, 3, 1620);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'postReq')
+data.setCell(1, 2, 'restassureddemo.TestClass')
+data.setCell(1, 3, 873);
 window.suiteTableData['Demo_Suite']= { tableData: data, tableDiv: 'times-div-Demo_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Demo_Suite">
               </div> <!-- times-div-Demo_Suite -->
             </div> <!-- times-div -->
@@ -221,11 +241,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">restassureddemo.APITestsDemo</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">firstTestCase</span>
+              <div class="chronological-class-name">restassureddemo.TestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getReq</span>
+                <span class="method-start">1610 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">3233 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">3235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">postReq</span>
+                <span class="method-start">3237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4111 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
